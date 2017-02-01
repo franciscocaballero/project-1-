@@ -1,0 +1,148 @@
+
+body{
+  text-align: center;
+  background-color: white;
+  color: #6A605A;
+
+}
+
+h1{
+  font-family: 'Lobster', cursive;
+  color: black;
+  font-size: 45px;
+}
+.circle{
+  text-align: center;
+  background-color: #ebe3e0;
+  width: 300px;
+  height: 300px;
+  margin: 20px auto;
+  overflow: hidden;
+  padding: 0px;
+    -webkit-border-radius:150px;
+  -moz-border-radius: 150px;
+  border-radius:150px;
+  box-shadow: 5px 5px 5px 5px #CCC;
+  border: 5px solid white;
+  /*THANK YOU STACKOVERFLOW*/
+}
+
+.box{
+  width: 295px;
+  height: 295px;
+  margin: 0;
+  padding: 0;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.box.red{
+  position: absolute;
+  margin: 0 0 5px 5px;
+  background-color: #ff3333;
+
+  -webkit-clip-path: inset(0 0 50% 50%);
+  clip-path: inset(0 0 50% 50%);
+
+     -webkit-border-radius:150px;
+  -moz-border-radius: 150px;
+  border-radius:150px;
+}
+
+.box.blue{
+  position: absolute;
+  margin: 0 5px 5px 0;
+  background-color: #3333ff;
+
+  -webkit-clip-path: inset(0 50% 50% 0);
+  clip-path: inset(0 50% 50% 0);
+
+       -webkit-border-radius:150px;
+  -moz-border-radius: 150px;
+  border-radius:150px;
+}
+
+.box.yellow{
+  position: absolute;
+  margin: 5px 0 0 5px;
+  background-color: #ffff33;
+  -webkit-clip-path: inset(50% 0 0 50%);
+  clip-path: inset(50% 0 0 50%);
+
+       -webkit-border-radius:150px;
+  -moz-border-radius: 150px;
+  border-radius:150px;
+}
+
+.box.green{
+  position: absolute;
+  margin: 5px 5px 0 0;
+  background-color: #33ffcc;
+
+  -webkit-clip-path: inset(50% 50% 0 0);
+  clip-path: inset(50% 50% 0 0);
+
+       -webkit-border-radius:150px;
+  -moz-border-radius: 150px;
+  border-radius:150px;
+}
+
+.lit{
+  opacity: 1;
+}
+
+.counter{
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.messageWinner, .messageLoser{
+  position: absolute;
+  top:0;
+  z-index: 1;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.messageBox{
+  position:relative;
+  top: 30%;
+  padding: 20px;
+  width: 350px;
+  height: 150px;
+  margin: auto;
+  border: 2px solid #f9a646;
+  background-color: #ebe3e0;
+
+    -webkit-border-radius:5px;
+  -moz-border-radius: 5px;
+  border-radius:5px;
+}
+
+.hidden{
+  display:none;
+}
+
+.start, .start{
+  font-size: 20px;
+  background-color: #80ccff;
+  padding: 10px 25px;
+  width: 120px;
+  border: 2px solid #black;
+  color: white;
+  outline: 0;
+  cursor: pointer;
+  margin: 0 5px;
+  -webkit-border-radius:5px;
+  -moz-border-radius: 5px;
+  border-radius:5px;
+
+   -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+}
+button:hover {
+    background-color: #ffffff;
+    color: black;
+    border: 2px solid #f9a646;

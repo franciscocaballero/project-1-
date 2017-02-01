@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Francisco Simon Says</title>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+</head>
+<body>
+<h1>Simon Says</h1>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <link rel="stylesheet" type ="text/css" href="style.css">
+
+  <script src="project.js"></script>
+
+<div class="counter">Winning Sequence Length: 20</div>
+
+<div class="circle">
+<div id="1" class="box red" data-box="1">
+  <audio id ="clip1" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" preload></audio>
+</div>
+<div id="2" class="box blue" data-box="2">
+  <audio id ="clip2" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" preload></audio>
+</div>
+<div id="3" class="box yellow" data-box="3">
+  <audio id ="clip3" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" preload></audio>
+</div>
+<div id="4" class="box green" data-box="4">
+  <audio id ="clip4" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" preload></audio>
+</div>
+</div>
+
+<button class="start">Start</button>
+<!-- THANK YOU CODEPEN -->
+<div class="messgeWinner hidden">
+<div class="messageBox">
+  <h2>You win!!!</h2>
+  <button class="start">Restart</button>
+</div>
+</div>
+
+<div class="messageLoser hidden">
+<div class="messageBox">
+  <h2>Sorry! Try again.</h2>
+  <button class="start">Restart</button>
+</div>
+</div>
+
+</body>
+</html>
